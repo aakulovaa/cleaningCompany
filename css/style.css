@@ -1942,7 +1942,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .header {
-        height: 45px;
+        height: 25px;
         padding: 5px 0;
     }
     
@@ -1956,13 +1956,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-icon {
-        width: 24px;
-        height: 24px;
+        width: 12px;
+        height: 12px;
         margin-bottom: 8px;
     }
     
     .logo-text {
-        font-size: 1rem;
+        font-size: 0.55rem;
         white-space: nowrap;
     }
     
@@ -1980,7 +1980,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav a {
-        font-size: 0.75rem;
+        font-size: 0.35rem;
         white-space: nowrap;
         padding: 2px 0;
     }
@@ -1992,9 +1992,9 @@ h1, h2, h3, h4, h5, h6 {
     
     .btn {
         padding: 4px 8px;
-        font-size: 0.75rem;
+        font-size: 0.35rem;
         border-radius: 6px;
-        min-width: 60px;
+        min-width: 30px;
     }
     
     /* Убедимся, что все помещается в одну строку */
