@@ -1928,7 +1928,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Мобильные устройства (480px - 768px) */
 @media (max-width: 768px) {
     .container {
-        max-width: 540px;
+        /* max-width: 540px; */
         padding: 0 12px;
     }
     
@@ -1942,6 +1942,14 @@ h1, h2, h3, h4, h5, h6 {
         margin-right: auto;
     }
     
+    .logo-text {
+        font-size: 0.35rem;
+    }
+
+    .btn {
+        font-size: 0.01rem;
+    }
+
     .nav {
         order: 3;
         width: 100%;
@@ -1955,7 +1963,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav a {
-        font-size: 0.85rem;
+        font-size: 0.35rem;
         padding: 5px 0;
     }
     
