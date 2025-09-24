@@ -117,6 +117,10 @@
             <div class="documents-grid">
                 <!-- Документ 1 -->
                 <div class="doc-preview">
+                    <img src="img/docs/card.jpg" alt="Карточка предприятия" onclick="openFullscreen('img/docs/card.jpg')">
+                </div>
+                <!-- Документ 1 -->
+                <div class="doc-preview">
                     <img src="img/docs/inn.jpg" alt="ИНН" onclick="openFullscreen('img/docs/inn.jpg')">
                 </div>
                 <!-- Документ 2 -->
@@ -140,9 +144,9 @@
     </section>
 
     <!-- Модальное окно для полноэкранного просмотра -->
-    <div id="fullscreenModal" class="modal">
+    <div id="fullscreenModal" class="fullscreenModal">
         <span class="close" onclick="closeFullscreen()">&times;</span>
-        <img class="modal-content" id="fullscreenImage">
+        <img class="fullscreenModal-content" id="fullscreenImage">
     </div>
 
 

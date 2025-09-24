@@ -45,7 +45,11 @@ const galleryData = {
             "img/works/highRiseCleanOfWindow/work18.jpg",
             "img/works/highRiseCleanOfWindow/work19.jpg",
             "img/works/highRiseCleanOfWindow/work20.jpg",
-            "img/works/highRiseCleanOfWindow/work21.jpg"
+            "img/works/highRiseCleanOfWindow/work21.jpg",
+            "img/works/highRiseCleanOfWindow/work22.jpg",
+            "img/works/highRiseCleanOfWindow/work23.jpg",
+            "img/works/highRiseCleanOfWindow/work24.jpg",
+            "img/works/highRiseCleanOfWindow/work25.jpg"
         ]
     },
     postConstruction: {
@@ -68,7 +72,8 @@ const galleryData = {
             "img/works/postConstruction/work15.jpg",
             "img/works/postConstruction/work16.jpg",
             "img/works/postConstruction/work17.jpg",
-            "img/works/postConstruction/work18.jpg"
+            "img/works/postConstruction/work18.jpg",
+            "img/works/postConstruction/work19.jpg"
         ]
     },
     industrialPremises: {
@@ -112,7 +117,8 @@ const galleryData = {
             "img/works/industrialPremises/work36.jpg",
             "img/works/industrialPremises/work37.jpg",
             "img/works/industrialPremises/work38.jpg",
-            "img/works/industrialPremises/work39.jpg"
+            "img/works/industrialPremises/work39.jpg",
+            "img/works/industrialPremises/work40.jpg"
         ]
     },
     deepCleaning: {
@@ -193,7 +199,11 @@ const galleryData = {
             "img/works/generalCleaning/work39.jpg",
             "img/works/generalCleaning/work40.jpg",
             "img/works/generalCleaning/work41.jpg",
-            "img/works/generalCleaning/work42.jpg"
+            "img/works/generalCleaning/work42.jpg",
+            "img/works/generalCleaning/work43.jpg",
+            "img/works/generalCleaning/work44.jpg",
+            "img/works/generalCleaning/work45.jpg",
+            "img/works/generalCleaning/work46.jpg"
         ]
     },
     eventsCleaninig: {
