@@ -1943,7 +1943,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-text {
-        font-size: 0.35rem;
+        font-size: 0.01rem;
     }
 
     .btn {
@@ -1963,7 +1963,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav a {
-        font-size: 0.35rem;
+        font-size: 0.01rem;
         padding: 5px 0;
     }
     
