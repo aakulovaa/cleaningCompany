@@ -305,13 +305,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 60px;
 }
 
 .reviews-carousel {
     width: 100%;
     overflow: hidden;
-    margin-left: 55px;
-    margin-right: 55px;
 }
 
 .reviews-track {
@@ -327,9 +326,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 25px;
     text-align: left;
-    min-height: 200px;
+    height: 380px; /* Увеличил высоту карточки */
     display: flex;
     flex-direction: column;
+    position: relative;
+    min-width: 0; 
 }
 
 .review-name {
@@ -339,13 +340,58 @@ h1, h2, h3, h4, h5, h6 {
     color: #2c3e50;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+    flex-shrink: 0; /* Запрещаем сжатие */
 }
 
 .review-text {
     font-size: 1rem;
     line-height: 1.5;
     color: #555;
+    overflow: hidden; /* Скрываем избыточный текст */
     flex-grow: 1;
+
+    min-width: 0;
+}
+
+.review-text.collapsed {
+    max-height: 200px; /* Увеличил высоту свернутого текста */
+    position: relative;
+}
+
+.review-text.collapsed::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(transparent, white);
+    pointer-events: none;
+}
+
+.review-text.expanded {
+    max-height: none;
+    overflow-y: auto; 
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: rgba(1, 92, 121, 1);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 5px 0;
+    align-self: flex-start;
+    flex-shrink: 0; /* Запрещаем сжатие */
+    transition: color 0.3s;
+    z-index: 2;
+    position: relative;
+}
+
+.read-more-btn:hover {
+    color: rgba(1, 92, 121, 1);
+    text-decoration: underline;
 }
 
 .reviews-nav-btn {
@@ -367,15 +413,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews-nav-btn:hover {
-    background: rgba(2, 170, 223, 1);
+    background: #2980b9;
 }
 
 .prev-btn {
-    left: -10px;
+    left: 0px;
 }
 
 .next-btn {
-    right: -10px;
+    right: 0px;
 }
 
 .reviews-nav-btn svg {
@@ -387,6 +433,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .reviews-dot {
@@ -400,6 +447,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .reviews-dot.active {
     background: rgba(1, 92, 121, 1);
+}
+
+/* Стили для скроллбара */
+.review-text.expanded::-webkit-scrollbar {
+    width: 6px;
+}
+
+.review-text.expanded::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.review-text.expanded::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.review-text.expanded::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
 }
 
 /* Services Section */
