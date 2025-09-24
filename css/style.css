@@ -1962,7 +1962,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-text {
-        font-size: 0.55rem;
+        font-size: 0.35rem;
         white-space: nowrap;
     }
     
@@ -1980,7 +1980,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav a {
-        font-size: 0.35rem;
+        font-size: 0.25rem;
         white-space: nowrap;
         padding: 2px 0;
     }
@@ -1992,9 +1992,9 @@ h1, h2, h3, h4, h5, h6 {
     
     .btn {
         padding: 4px 8px;
-        font-size: 0.35rem;
+        font-size: 0.25rem;
         border-radius: 6px;
-        min-width: 30px;
+        min-width: 20px;
     }
     
     /* Убедимся, что все помещается в одну строку */
