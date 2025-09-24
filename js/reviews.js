@@ -51,13 +51,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Функция для определения количества отзывов на экране
     function getReviewsPerView() {
+        if (window.innerWidth <= 380) return 1;
         if (window.innerWidth <= 480) return 1;
-        if (window.innerWidth <= 768) return 2;
+        if (window.innerWidth <= 768) return 1;
+        if (window.innerWidth <= 968) return 2;
         return 3;
+    }
+
+    // И добавим проверку высоты текста с учетом адаптивности
+    function getMaxHeight() {
+        if (window.innerWidth <= 380) return 110;
+        if (window.innerWidth <= 480) return 130;
+        if (window.innerWidth <= 768) return 150;
+        if (window.innerWidth <= 968) return 160;
+        if (window.innerWidth <= 1200) return 180;
+        return 200;
     }
     
     // Проверка, нужна ли кнопка "Читать далее"
-    function needsReadMore(textElement, maxHeight = 200) {
+    function needsReadMore(textElement) {
+        const maxHeight = getMaxHeight();
         return textElement.scrollHeight > maxHeight;
     }
     
