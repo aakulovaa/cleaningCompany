@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - CleanPro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="img/logo.png" alt="ProfClean" class="logo-icon">
+                        <span class="logo-text">ProfClean</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="about.html" class="nav-link active">О компании</a></li>
+                        <li><a href="services.html" class="nav-link">Услуги</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="btn btn-primary" id="orderCallBtn">Заказать уборку</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Content -->
+     <section class="about-content-section">
+        <div class="container">
+            <h2 class="section-title">О компании</h2>
+            <p class="section-subtitle">ProfClean это команда профессионалов клининга для Вашего бизнеса.</p>
+            
+            <div class="about-container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>КАК МЫ РАБОТАЕМ</h2>
+                        <ul class="mission-list">
+                            <li>Мы оказываем полный спектр клиниговых услуг для Вашего бизнеса от уборки офисов до уборки производства и складских помещений.</li>
+                            <li>Компания ProfClean это полный клининг после строительства и ремонта.</li>
+                            <li>Наша компания проводит высотный клининг потолочного и запотолочного пространств на высоте до 8 м в супермаркетах ресторанах, кафе, офисах, промышленных зданиях.</li>
+                            <li>Компания ProfClean занимается комплексным обслуживанием помещений и зданий и работает с юридическими лицами.</li>
+                        </ul>
+                    </div>
+            
+                <div class="document-preview">
+                    <div class="doc-embed">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTutSermbjpFGCBLuRBf-M9Nvw-fTgXg8hcVa7HBCRhivVm-EcPdgvUsqhBTZ4P9w/pub?embedded=true"
+                                width="100%" 
+                                height="500" 
+                                frameborder="0" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="highlight-box">
+                <h2 class="highlight-title">Основные направления работы нашей компании:</h2>
+                <ul class="highlight-list">
+                    <li>Мойка окон</li>
+                    <li>Профессиональная химчистка</li>
+                    <li>Глубокая чистка пола с помощью роторного оборудования</li>
+                    <li>Мойка на высоте</li>
+                    <li>Мойка на высоте</li>
+                    <li>Уборка медицинских центров и салонов красоты</li>
+                    <li>Высотный клининг по профессиональному обеспыливанию потолочного пространства в ресторанах, супермаркетах и офисах</li>
+                </ul>
+            </div>
+
+            <h2>ЦЕННОСТИ КОМПАНИИ</h2>
+            <ul class="mission-list">
+                <li>Выстроенная логистика и полный штат сотрудников с опытом в клининге и современное клининговое оборудование позволяет нашей компании проводить уборку больших помещений в кратчайшие сроки с гарантией качества.</li>
+                <li>Руководство компании контролирует все этапы клининга с момента осмотра объекта, согласования бюджета, подписания договора и оказания всего объёма клининговых работ.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics">
+        <div class="container">
+            <h2 class="section-title">Мы в цифрах</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Лет на рынке</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Профессионалов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">96%</div>
+                    <div class="stat-label">Положительных отзывов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Секция с миниатюрами документов -->
+    <section class="documents-preview-section">
+        <div class="container">
+            <!-- <h2>Данные о компании</h2> -->
+            <p>Нажмите на любой документ для просмотра в полном размере</p>
+            
+            <div class="documents-grid">
+                <!-- Документ 1 -->
+                <div class="doc-preview">
+                    <img src="img/docs/inn.jpg" alt="ИНН" onclick="openFullscreen('img/docs/inn.jpg')">
+                </div>
+                <!-- Документ 2 -->
+                <div class="doc-preview">
+                    <img src="img/docs/orgnip.jpg" alt="ОРГНИП" onclick="openFullscreen('img/docs/orgnip.jpg')">
+                </div>
+                <!-- Документ 3 -->
+                <div class="doc-preview">
+                    <img src="img/docs/CCI22092025_0001.jpg" alt="Док1" onclick="openFullscreen('img/docs/CCI22092025_0001.jpg')">
+                </div>
+                <!-- Документ 4 -->
+                <div class="doc-preview">
+                    <img src="img/docs/CCI22092025_0003.jpg" alt="Док2" onclick="openFullscreen('img/docs/CCI22092025_0003.jpg')">
+                </div>
+                <!-- Документ 5 -->
+                <div class="doc-preview">
+                    <img src="img/docs/last.jpg" alt="Док3" onclick="openFullscreen('img/docs/last.jpg')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для полноэкранного просмотра -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close" onclick="closeFullscreen()">&times;</span>
+        <img class="modal-content" id="fullscreenImage">
+    </div>
+
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Хотите стать нашим партнером?</h2>
+                <p>Закажите уборку и убедитесь в качестве наших услуг</p>
+                <button class="btn btn-large btn-accent" id="ctaOrderBtn">Заказать уборку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Колонка 1: Лого и описание -->
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="ProfClean" class="logo-icon">
+                        <span class="logo-text">ProfClean</span>
+                    </div>
+                    <p class="footer-description">Профессиональная клининговая компания. Создаем чистоту для вашего комфорта.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/evgeniylikunov" class="social-link" target="_blank" rel="noopener" aria-label="Телеграм">
+                            <img src="img/tg.svg" alt="Телеграм">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Контакты -->
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <span>+7 (916) 598-35-05</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>profclinning@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>Ежедневно<br>Круглосуточно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>© 2025 ProfClean. Все права защищены.</p>
+                    <div class="footer-legal">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Modal Window -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Заказать уборку</h3>
+                <button class="modal-close" id="closeModal">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="modalName">Ваше имя *</label>
+                        <input type="text" id="modalName" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalPhone">Телефон *</label>
+                        <input type="tel" id="modalPhone" name="phone" placeholder="+7 (999) 999-99-99" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalTime">Время звонка</label>
+                        <select id="modalTime" name="time">
+                            <option value="">Выберите удобное время звонка</option>
+                            <option value="at6to7">с 6:00 до 7:00</option>
+                            <option value="at7to8">с 7:00 до 8:00</option>
+                            <option value="at8to9">с 8:00 до 9:00</option>
+                            <option value="at9to10">с 9:00 до 10:00</option>
+                            <option value="at10to11">с 10:00 до 11:00</option>
+                            <option value="at11to12">с 11:00 до 12:00</option>
+                            <option value="at12to13">с 12:00 до 13:00</option>
+                            <option value="at13to14">с 13:00 до 14:00</option>
+                            <option value="at14to15">с 14:00 до 15:00</option>
+                            <option value="at15to16">с 15:00 до 16:00</option>
+                            <option value="at16to17">с 16:00 до 17:00</option>
+                            <option value="at17to18">с 17:00 до 18:00</option>
+                            <option value="at18to19">с 18:00 до 19:00</option>
+                            <option value="at19to20">с 19:00 до 20:00</option>
+                            <option value="at20to21">с 20:00 до 21:00</option>
+                            <option value="at21to22">с 21:00 до 22:00</option>
+                            <option value="at22to23">с 22:00 до 23:00</option>
+                            <option value="at23to24">с 23:00 до 24:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalService">Услуга</label>
+                        <select id="modalService" name="service">
+                            <option value="">Выберите услугу</option>
+                            <option value="profHighRiseCeiling">Профессиональный высотный клининг потолочного пространства любой сложности.</option>
+                            <option value="highRiseCleanOfWindow">Высотная мойка окон и фасадов зданий.</option>
+                            <option value="postConstruction">Послестроительная уборка</option>
+                            <option value="industrialPremises">Уборка производственных и непроизводственных помещений.</option>
+                            <option value="deepCleaning">Глубокая чистка напольных покрытий с помощью роторного оборудования.</option>
+                            <option value="profDry">Профессиональная химчистка напольных покрытий и мягкой мебели</option>
+                            <option value="generalCleaning">Генеральная уборка офисов, коттеджей.</option>
+                            <option value="eventsCleaninig">Уборка на мероприятиях.</option>
+                            <option value="profCleanBoats">Профессиональный клининг катеров, лодок, яхт.</option>
+                            <option value="generalFitnessSpa">Генеральная уборка Fitness, Wellness, SPA центров.</option>
+                            <option value="cleanGarage">Уборка гаражей</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalMessage">Сообщение</label>
+                        <textarea id="modalMessage" name="message" placeholder="Дополнительная информация"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-full">Отправить заявку</button>
+                </form>
+                <div id="modalMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+
+     <script type="module" src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
