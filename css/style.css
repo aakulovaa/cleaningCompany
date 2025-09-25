@@ -1866,54 +1866,103 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 
-/* Map and Form */
-.map-form {
-    padding: 80px 0;
-    background: white;
+/* Feedback Process Section */
+.feedback-process {
+    padding-top: 60px;
+    color: white;
 }
 
-.map-form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+
+.process-steps {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.map-container {
-    background: rgba(254, 254, 252, 1);
-    border-radius: 15px;
-    overflow: hidden;
-    border: 2px solid rgba(1, 95, 121, 0.1);
-}
-
-.map-placeholder {
-    height: 400px;
+.process-step {
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background: rgba(1, 95, 121, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 80px;
+}
+
+.process-step:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+    background: white;
+    color: rgba(1, 95, 121, 1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
-.map-placeholder span {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: rgba(1, 95, 121, 1);
+.step-content h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.2;
 }
 
-.form-container {
-    padding: 2rem;
+.step-content p {
+    margin: 0;
+    line-height: 1.4;
+    opacity: 0.9;
+    font-size: 0.8rem;
 }
 
-.form-container h2 {
-    color: rgba(1, 95, 121, 1);
-    margin-bottom: 0.5rem;
+/* Стили для финального шага */
+.process-step.final-step {
+    background: rgba(1, 95, 121, 1);
+    border: 2px solid #ff5722;
+    position: relative;
+    margin-top: 30px;
 }
 
-.form-container p {
-    color: #666;
-    margin-bottom: 2rem;
+.process-step.final-step .step-number {
+    background: #ff5722;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
 }
+
+.process-step.final-step .step-content h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.process-step.final-step .step-content p {
+    color: #ffffff;
+    font-size: 0.85rem;
+}
+
+.final-note {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #e65100;
+    font-weight: 600;
+    border-left: 3px solid #ff5722;
+}
+
 
 /* FAQ */
 .faq {
@@ -2088,7 +2137,6 @@ h1, h2, h3, h4, h5, h6 {
     .doc-embed {
         max-width: 520px;
         width: 500px;
-        /* height: 736px; */
     }
     
     .footer {
@@ -2132,6 +2180,32 @@ h1, h2, h3, h4, h5, h6 {
     
     .contact-item {
         font-size: 0.85rem;
+    }
+    .feedback-process {
+        padding-top: 50px;
+    }
+    
+    .process-steps {
+        max-width: 550px;
+    }
+    
+    .process-step {
+        padding: 18px;
+        min-height: 75px;
+    }
+    
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
+    }
+    
+    .step-content h3 {
+        font-size: 0.95rem;
+    }
+    
+    .step-content p {
+        font-size: 0.78rem;
     }
 }
 
@@ -2389,6 +2463,57 @@ h1, h2, h3, h4, h5, h6 {
     
     .gallery-next {
         right: 15px;
+    }
+    .feedback-process {
+        padding-top: 40px;
+    }
+    
+    .process-steps {
+        max-width: 500px;
+    }
+    
+    .process-step {
+        padding: 16px;
+        margin-bottom: 18px;
+        min-height: 70px;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        margin-right: 12px;
+    }
+    
+    .step-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .step-content p {
+        font-size: 0.75rem;
+    }
+    
+    .process-step.final-step {
+        margin-top: 25px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 1rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.8rem;
+    }
+    
+    .final-note {
+        font-size: 0.7rem;
+        padding: 5px 8px;
     }
 }
 
@@ -2779,6 +2904,64 @@ h1, h2, h3, h4, h5, h6 {
     .gallery-thumbnail {
         width: 70px;
         height: 55px;
+    }
+    .feedback-process {
+        padding-top: 30px;
+    }
+    
+    .process-steps {
+        max-width: 450px;
+        padding: 0 15px;
+    }
+    
+    .process-step {
+        padding: 14px;
+        margin-bottom: 15px;
+        min-height: 65px;
+        border-radius: 10px;
+    }
+    
+    .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    
+    .step-content h3 {
+        font-size: 0.85rem;
+        margin-bottom: 3px;
+    }
+    
+    .step-content p {
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+    
+    .process-step.final-step {
+        margin-top: 20px;
+        border-width: 1.5px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.75rem;
+    }
+    
+    .final-note {
+        font-size: 0.65rem;
+        padding: 4px 6px;
+        margin-top: 6px;
     }
 }
 
@@ -3239,6 +3422,60 @@ h1, h2, h3, h4, h5, h6 {
     .page-header p {
         font-size: 1rem;
     }
+    .feedback-process {
+        padding-top: 25px;
+    }
+    
+    .process-steps {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .process-step {
+        padding: 12px;
+        margin-bottom: 12px;
+        min-height: 60px;
+        border-radius: 8px;
+    }
+    
+    .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+        margin-right: 8px;
+    }
+    
+    .step-content h3 {
+        font-size: 0.8rem;
+    }
+    
+    .step-content p {
+        font-size: 0.65rem;
+    }
+    
+    .process-step.final-step {
+        margin-top: 15px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 0.85rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.7rem;
+    }
+    
+    .final-note {
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        margin-top: 5px;
+    }
 }
 
 /* Сверхмаленькие устройства (< 380px) */
@@ -3532,6 +3769,56 @@ h1, h2, h3, h4, h5, h6 {
     .gallery-thumbnail {
         width: 45px;
         height: 35px;
+    }
+    .feedback-process {
+        padding-top: 20px;
+    }
+    
+    .process-step {
+        padding: 10px;
+        margin-bottom: 10px;
+        min-height: 55px;
+        border-radius: 6px;
+    }
+    
+    .step-number {
+        width: 22px;
+        height: 22px;
+        font-size: 0.75rem;
+        margin-right: 6px;
+    }
+    
+    .step-content h3 {
+        font-size: 0.75rem;
+    }
+    
+    .step-content p {
+        font-size: 0.6rem;
+        line-height: 1.2;
+    }
+    
+    .process-step.final-step {
+        margin-top: 12px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 0.8rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.65rem;
+    }
+    
+    .final-note {
+        font-size: 0.55rem;
+        padding: 2px 4px;
+        margin-top: 4px;
     }
 }
 /* Дополнительно для очень высоких экранов */
