@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                         
 👤 *Имя:* ${name}
 📞 *Телефон:* ${phone}
-
 ${timeText}${serviceText}${messageText}
 
 ⏰ *Время отправки:* ${new Date().toLocaleString('ru-RU')}

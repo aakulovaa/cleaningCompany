@@ -2251,7 +2251,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .about-container {
-        max-width: 900px;
+        max-width: 700px;
         padding: 30px 15px;
     }
     
@@ -2402,11 +2402,14 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 2rem;
     }
     
-    .services,
     .advantages,
-    .portfolio,
     .cta {
         padding: 60px 0;
+    }
+
+    .services,
+    .portfolio {
+        padding: 80px 0;
     }
     
     .service-card,
@@ -2489,7 +2492,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .documents-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        grid-template-columns: repeat(2, 1fr);
         gap: 14px;
         max-width: 600px;
         padding: 0 15px;
@@ -2521,13 +2524,23 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 30px;
     }
 
+    /* ОБНОВЛЕННЫЙ about-container */
     .about-container {
         padding: 25px 12px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
     }
     
     .about-grid {
         grid-template-columns: 1fr;
         gap: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
     
     /* Перемещаем документ под текст */
@@ -2539,28 +2552,42 @@ h1, h2, h3, h4, h5, h6 {
     
     .about-text {
         grid-area: text;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
     
     .document-preview {
         grid-area: document;
         padding: 18px;
         border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     
     .about-text h2 {
         font-size: 1.5rem;
         padding-top: 1.5rem;
         margin-bottom: 1rem;
+        text-align: center;
     }
     
     .mission-list {
         margin: 1.5rem 0;
+        text-align: left;
+        max-width: 100%;
     }
     
     .mission-list li {
         font-size: 0.95rem;
         padding: 0.7rem 0;
         padding-left: 25px;
+        max-width: 100%;
+        word-wrap: break-word;
     }
     
     .mission-list li::before {
@@ -2570,20 +2597,19 @@ h1, h2, h3, h4, h5, h6 {
     .doc-embed {
         height: 500px;
         border-radius: 6px;
-    }
-    
-    .values-list li {
-        font-size: 1rem;
-        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
     }
     
     .highlight-box {
         padding: 30px;
         margin: 40px auto;
+        max-width: 100%;
     }
     
     .highlight-title {
         font-size: 1.5rem;
+        text-align: center;
     }
     
     .highlight-list li {
@@ -2594,10 +2620,12 @@ h1, h2, h3, h4, h5, h6 {
     .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1.5rem;
+        max-width: 100%;
     }
     
     .stat-item {
         padding: 1.5rem;
+        text-align: center;
     }
     
     .stat-number {
@@ -2755,11 +2783,14 @@ h1, h2, h3, h4, h5, h6 {
         margin: 10px auto;
     }
     
-    .services,
     .advantages,
-    .portfolio,
     .cta {
         padding: 40px 0;
+    }
+
+    .services,
+    .portfolio{
+        padding: 60px 0;
     }
     
     .services-grid,
