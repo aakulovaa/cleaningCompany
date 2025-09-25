@@ -1399,23 +1399,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding: 40px 20px;
 }
-.document-preview {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.doc-embed {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text document";
     gap: 40px;
     align-items: start;
 }
@@ -1469,6 +1457,27 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-size: 1.3rem;
 }
+
+.document-preview {
+    grid-area: document;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc-embed {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
 
 .values-list {
     list-style: none;
@@ -2054,19 +2063,33 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 70%;
     }
     
-    .about-grid {
-        gap: 30px;
+    .about-container {
+        max-width: 1000px;
+        padding: 35px 5px;
     }
-
+    
+    /* .about-grid {
+        gap: 35px;
+    } */
+    
+    .about-text h2 {
+        font-size: 1.8rem;
+        padding-top: 2.5rem;
+    }
+    
+    .mission-list li {
+        font-size: 1.05rem;
+        /* padding: 0.9rem 0; */
+    }
+    
     .document-preview {
         padding: 22px;
-        border-radius: 11px;
-        margin: 18px 0;
     }
     
     .doc-embed {
-        height: 550px;
-        border-radius: 7px;
+        max-width: 520px;
+        width: 500px;
+        /* height: 736px; */
     }
     
     .footer-content {
@@ -2227,20 +2250,34 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 35px;
     }
     
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
+    .about-container {
+        max-width: 900px;
+        padding: 30px 15px;
     }
-
+    
+    /* .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    } */
+    
+    .about-text h2 {
+        font-size: 1.7rem;
+        padding-top: 2rem;
+    }
+    
+    .mission-list li {
+        font-size: 1rem;
+        /* padding: 0.8rem 0; */
+    }
+    
     .document-preview {
         padding: 20px;
-        border-radius: 10px;
-        margin: 16px 0;
     }
     
     .doc-embed {
-        height: 500px;
-        border-radius: 6px;
+        max-width: 100%;
+        width: 450px;
+        height: 600px;
     }
     
     .image-placeholder.large {
@@ -2483,12 +2520,58 @@ h1, h2, h3, h4, h5, h6 {
         right: 20px;
         font-size: 30px;
     }
-    
-    .about-text h2 {
-        font-size: 1.6rem;
+
+    .about-container {
+        padding: 25px 12px;
     }
     
-    .mission-list li,
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    /* Перемещаем документ под текст */
+    .about-grid {
+        grid-template-areas: 
+            "text"
+            "document";
+    }
+    
+    .about-text {
+        grid-area: text;
+    }
+    
+    .document-preview {
+        grid-area: document;
+        padding: 18px;
+        border-radius: 10px;
+    }
+    
+    .about-text h2 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mission-list {
+        margin: 1.5rem 0;
+    }
+    
+    .mission-list li {
+        font-size: 0.95rem;
+        padding: 0.7rem 0;
+        padding-left: 25px;
+    }
+    
+    .mission-list li::before {
+        font-size: 1.1rem;
+    }
+    
+    .doc-embed {
+        height: 500px;
+        border-radius: 6px;
+    }
+    
     .values-list li {
         font-size: 1rem;
         padding-left: 25px;
@@ -2519,19 +2602,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .stat-number {
         font-size: 2.5rem;
-    }
-
-    .document-preview {
-        padding: 18px;
-        border-radius: 8px;
-        margin: 14px 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    
-    .doc-embed {
-        height: 450px;
-        border-radius: 5px;
-        border-width: 1px;
     }
     
     .footer {
@@ -2825,12 +2895,40 @@ h1, h2, h3, h4, h5, h6 {
         padding: 20px 10px;
     }
     
-    .about-text h2 {
-        font-size: 1.3rem;
-        padding-top: 2rem;
+    .about-grid {
+        gap: 20px;
     }
     
-    .mission-list li,
+    .about-text h2 {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    
+    .mission-list {
+        margin: 1rem 0;
+    }
+    
+    .mission-list li {
+        font-size: 0.9rem;
+        padding: 0.6rem 0;
+        padding-left: 20px;
+        line-height: 1.5;
+    }
+    
+    .mission-list li::before {
+        font-size: 1rem;
+    }
+    
+    .document-preview {
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    .doc-embed {
+        height: 400px;
+        border-radius: 5px;
+    }
+    
     .values-list li {
         font-size: 0.9rem;
         padding-left: 20px;
@@ -2873,17 +2971,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .stat-label {
         font-size: 0.9rem;
-    }
-
-    .document-preview {
-        padding: 15px;
-        border-radius: 6px;
-        margin: 12px 0;
-    }
-    
-    .doc-embed {
-        height: 400px;
-        border-radius: 4px;
     }
     
     .footer {
@@ -3177,18 +3264,43 @@ h1, h2, h3, h4, h5, h6 {
         right: 10px;
         font-size: 22px;
     }
-
+.about-container {
+        padding: 15px 8px;
+    }
+    
+    .about-grid {
+        gap: 15px;
+    }
+    
+    .about-text h2 {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    
+    .mission-list {
+        margin: 1rem 0;
+    }
+    
+    .mission-list li {
+        font-size: 0.85rem;
+        padding: 0.5rem 0;
+        padding-left: 18px;
+    }
+    
+    .mission-list li::before {
+        font-size: 0.9rem;
+    }
+    
     .document-preview {
         padding: 12px;
-        border-radius: 5px;
-        margin: 10px 0;
+        border-radius: 6px;
     }
     
     .doc-embed {
         height: 350px;
-        border-radius: 3px;
-    }ы
-    
+        border-radius: 4px;
+    }
+
     .footer-column .logo-text {
         font-size: 0.9rem;
     }
@@ -3267,15 +3379,29 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     }
 
+    .about-container {
+        max-width: 1400px;
+        padding: 50px 30px;
+    }
+    
+    .about-grid {
+        gap: 50px;
+    }
+    
+    .about-text h2 {
+        font-size: 2.2rem;
+    }
+    
+    .mission-list li {
+        font-size: 1.2rem;
+    }
+    
     .document-preview {
         padding: 30px;
-        border-radius: 14px;
-        margin: 25px 0;
     }
     
     .doc-embed {
-        height: 500px;
-        border-radius: 9px;
+        max-width: 650px;
     }
 }
 
@@ -3292,11 +3418,8 @@ h1, h2, h3, h4, h5, h6 {
     .review-text.collapsed {
         max-height: 140px;
     }
-    .doc-preview img {
-        height: 110px;
-    }
     .doc-embed {
-        height: 500px;
+        height: 450px;
     }
 }
 
@@ -3327,12 +3450,12 @@ h1, h2, h3, h4, h5, h6 {
         height: 100px;
     }
 
-    .doc-embed {
-        height: 400px;
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
     }
     
-    .document-preview {
-        padding: 15px;
+    .doc-embed {
+        height: 500px;
     }
 }
 
@@ -3353,39 +3476,31 @@ h1, h2, h3, h4, h5, h6 {
 /* Улучшение читаемости на маленьких экранах */
 @media (max-width: 768px) {
     .doc-embed {
-        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+        -webkit-overflow-scrolling: touch;
     }
 }
 
-/* Оптимизация для медленных соединений */
-.doc-embed {
-    background: #f8f9fa;
+/* Состояние загрузки */
+.doc-embed.loading {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
 }
 
-.doc-embed::before {
+.doc-embed.loading::before {
     content: 'Загрузка документа...';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #666;
     font-size: 1rem;
-    z-index: -1;
 }
 
-.doc-embed iframe[src] ~ .doc-embed::before {
-    display: none;
-}
-
-/* Улучшение доступности */
-.mobile-menu-btn:focus {
-    outline: 2px solid white;
-    outline-offset: 2px;
-}
-
-.nav a:focus,
-.btn:focus {
-    outline: 2px solid rgba(2, 170, 223, 1);
-    outline-offset: 2px;
+@media (prefers-color-scheme: dark) {
+    .doc-embed.loading {
+        background: #333;
+    }
+    
+    .doc-embed.loading::before {
+        color: #ccc;
+    }
 }
