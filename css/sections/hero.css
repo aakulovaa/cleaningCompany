@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-    background: url('/img/back.jpg') center/cover no-repeat;
+    background: url('../../img/back.jpg') center/cover no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
