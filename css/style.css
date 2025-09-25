@@ -1478,7 +1478,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-
 .values-list {
     list-style: none;
     padding: 0;
@@ -3704,7 +3703,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 }
-
 
 /* Состояние загрузки */
 .doc-embed.loading {

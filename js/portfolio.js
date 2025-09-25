@@ -49,7 +49,10 @@ const galleryData = {
             "img/works/highRiseCleanOfWindow/work22.jpg",
             "img/works/highRiseCleanOfWindow/work23.jpg",
             "img/works/highRiseCleanOfWindow/work24.jpg",
-            "img/works/highRiseCleanOfWindow/work25.jpg"
+            "img/works/highRiseCleanOfWindow/work25.jpg",
+            "img/works/highRiseCleanOfWindow/work26.jpg",
+            "img/works/highRiseCleanOfWindow/work27.jpg",
+            "img/works/highRiseCleanOfWindow/work28.jpg"
         ]
     },
     postConstruction: {
@@ -59,13 +62,6 @@ const galleryData = {
             "img/works/postConstruction/work2.jpg",
             "img/works/postConstruction/work3.jpg",
             "img/works/postConstruction/work4.jpg",
-            "img/works/postConstruction/work5.jpg",
-            "img/works/postConstruction/work6.jpg",
-            "img/works/postConstruction/work7.jpg",
-            "img/works/postConstruction/work8.jpg",
-            "img/works/postConstruction/work9.jpg",
-            "img/works/postConstruction/work10.jpg",
-            "img/works/postConstruction/work11.jpg",
             "img/works/postConstruction/work12.jpg",
             "img/works/postConstruction/work13.jpg",
             "img/works/postConstruction/work14.jpg",
@@ -73,7 +69,26 @@ const galleryData = {
             "img/works/postConstruction/work16.jpg",
             "img/works/postConstruction/work17.jpg",
             "img/works/postConstruction/work18.jpg",
-            "img/works/postConstruction/work19.jpg"
+            "img/works/postConstruction/work19.jpg",
+            "img/works/postConstruction/work20.jpg",
+            "img/works/postConstruction/work21.jpg",
+            "img/works/postConstruction/work22.jpg",
+            "img/works/postConstruction/work23.jpg",
+            "img/works/postConstruction/work24.jpg",
+            "img/works/postConstruction/work25.jpg",
+            "img/works/postConstruction/work26.jpg",
+            "img/works/postConstruction/work27.jpg",
+            "img/works/postConstruction/work28.png",
+            "img/works/postConstruction/work29.png",
+            "img/works/postConstruction/work30.jpg",
+            "img/works/postConstruction/work31.jpg",
+            "img/works/postConstruction/work32.png",
+            "img/works/postConstruction/work33.jpg",
+            "img/works/postConstruction/work34.jpg",
+            "img/works/postConstruction/work35.jpg",
+            "img/works/postConstruction/work36.jpg",
+            "img/works/postConstruction/work37.jpg",
+            "img/works/postConstruction/work38.jpg"
         ]
     },
     industrialPremises: {
@@ -134,7 +149,8 @@ const galleryData = {
             "img/works/deepCleaning/work8.jpg",
             "img/works/deepCleaning/work9.jpg",
             "img/works/deepCleaning/work10.jpg",
-            "img/works/deepCleaning/work11.jpg"
+            "img/works/deepCleaning/work11.jpg",
+            "img/works/deepCleaning/work12.jpg"
         ]
     },
     profDry: {
@@ -203,7 +219,21 @@ const galleryData = {
             "img/works/generalCleaning/work43.jpg",
             "img/works/generalCleaning/work44.jpg",
             "img/works/generalCleaning/work45.jpg",
-            "img/works/generalCleaning/work46.jpg"
+            "img/works/generalCleaning/work46.jpg",
+            "img/works/generalCleaning/work47.jpg",
+            "img/works/generalCleaning/work48.jpg",
+            "img/works/generalCleaning/work49.jpg",
+            "img/works/generalCleaning/work50.jpg",
+            "img/works/generalCleaning/work51.jpg",
+            "img/works/generalCleaning/work52.jpg",
+            "img/works/generalCleaning/work53.jpg",
+            "img/works/generalCleaning/work54.jpg",
+            "img/works/generalCleaning/work55.jpg",
+            "img/works/generalCleaning/work56.jpg",
+            "img/works/generalCleaning/work57.jpg",
+            "img/works/generalCleaning/work58.jpg",
+            "img/works/generalCleaning/work59.jpg",
+            "img/works/generalCleaning/work60.jpg"
         ]
     },
     eventsCleaninig: {
@@ -227,7 +257,11 @@ const galleryData = {
             "img/works/profCleanBoats/work7.jpg",
             "img/works/profCleanBoats/work8.jpg",
             "img/works/profCleanBoats/work9.jpg",
-            "img/works/profCleanBoats/work10.jpg"
+            "img/works/profCleanBoats/work10.jpg",
+            "img/works/profCleanBoats/work11.jpg",
+            "img/works/profCleanBoats/work12.jpg",
+            "img/works/profCleanBoats/work13.jpg",
+            "img/works/profCleanBoats/work14.jpg"
         ]
     },
     generalFitnessSpa: {
@@ -249,7 +283,10 @@ const galleryData = {
         title: "Уборка гаражей",
         images: [
             "img/works/cleanGarage/work1.jpg",
-            "img/works/cleanGarage/work2.jpg"
+            "img/works/cleanGarage/work2.jpg",
+            "img/works/cleanGarage/work3.jpg",
+            "img/works/cleanGarage/work4.jpg",
+            "img/works/cleanGarage/work5.jpg"
         ]
     }
 };
