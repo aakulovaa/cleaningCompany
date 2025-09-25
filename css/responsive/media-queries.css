@@ -1,0 +1,2016 @@
+/* ========================================================================== */
+/* MEDIA QUERIES - АДАПТАЦИЯ ПОД РАЗНЫЕ РАЗМЕРЫ */
+/* ========================================================================== */
+
+/* Большие планшеты и маленькие десктопы (968px - 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 15px;
+    }
+    
+    .nav ul {
+        gap: 1.5rem;
+    }
+    
+    .nav a {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .header-actions {
+        gap: 12px;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .reviews-container {
+        padding: 0 50px;
+        max-width: 1000px;
+    }
+    
+    .review-card {
+        flex: 0 0 calc(100% / 3 - 15px);
+        margin: 0 7.5px;
+        height: 360px;
+        padding: 22px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 180px;
+    }
+    
+    .reviews-title {
+        font-size: 2.3rem;
+        margin-bottom: 35px;
+    }
+    
+    .review-name {
+        font-size: 1.15rem;
+    }
+    
+    .documents-preview-section {
+        padding: 50px 0;
+    }
+    
+    .documents-preview-section h2 {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+    
+    .documents-preview-section > .container > p {
+        font-size: 1.05rem;
+        margin-bottom: 35px;
+    }
+    
+    .documents-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки вместо 6 */
+        gap: 18px;
+        max-width: 1000px;
+        padding: 0 15px;
+    }
+    
+    .doc-preview {
+        padding: 14px;
+    }
+    
+    .doc-preview img {
+        height: 140px;
+    }
+    
+    .doc-preview .doc-title {
+        font-size: 0.88rem;
+    }
+    
+    .fullscreenModal-content {
+        max-width: 70%;
+    }
+    
+    .about-container {
+        max-width: 1000px;
+        padding: 35px 5px;
+    }
+    
+    .about-grid {
+        gap: 35px;
+    }
+    
+    .about-text h2 {
+        font-size: 1.8rem;
+        padding-top: 2.5rem;
+    }
+    
+    .mission-list li {
+        font-size: 1.05rem;
+        /* padding: 0.9rem 0; */
+    }
+    
+    .document-preview {
+        padding: 22px;
+    }
+    
+    .doc-embed {
+        max-width: 520px;
+        width: 500px;
+    }
+    
+    .footer {
+        padding: 35px 0 18px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2.5rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .footer-column h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .footer-column .logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .footer-column .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .footer-description {
+        font-size: 0.85rem;
+        max-width: 280px;
+    }
+    
+    .footer-column .social-link {
+        width: 34px;
+        height: 34px;
+    }
+    
+    .footer-column .social-link img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .contact-item {
+        font-size: 0.85rem;
+    }
+    .feedback-process {
+        padding-top: 50px;
+    }
+    
+    .process-steps {
+        max-width: 550px;
+    }
+    
+    .process-step {
+        padding: 18px;
+        min-height: 75px;
+    }
+    
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
+    }
+    
+    .step-content h3 {
+        font-size: 0.95rem;
+    }
+    
+    .step-content p {
+        font-size: 0.78rem;
+    }
+}
+
+/* Планшеты (768px - 968px) */
+@media (max-width: 968px) {
+    .container {
+        max-width: 900px;
+        padding: 0 15px;
+    }
+    
+    .nav ul {
+        gap: 1.2rem;
+    }
+    
+    .nav a {
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header {
+        height: 55px;
+        padding: 8px 0;
+    }
+    
+    .header-actions {
+        gap: 10px;
+    }
+    
+    .hero {
+        padding: 90px 0 80px;
+    }
+    
+    .hero-title {
+        font-size: 2.4rem;
+        margin-top: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .feature span {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .services-grid,
+    .advantages-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .reviews-container {
+        padding: 0 45px;
+        max-width: 900px;
+    }
+    
+    .review-card {
+        flex: 0 0 calc(100% / 2 - 15px);
+        margin: 0 7.5px;
+        height: 340px;
+        padding: 20px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 160px;
+    }
+    
+    .reviews-title {
+        font-size: 2.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .review-name {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .review-text {
+        font-size: 0.95rem;
+    }
+    
+    .reviews-nav-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .reviews-nav-btn svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .documents-preview-section {
+        padding: 45px 0;
+    }
+    
+    .documents-preview-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .documents-preview-section > .container > p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .documents-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+        gap: 16px;
+        max-width: 800px;
+        padding: 0 15px;
+    }
+    
+    .doc-preview {
+        padding: 12px;
+    }
+    
+    .doc-preview img {
+        height: 130px;
+        margin-bottom: 8px;
+    }
+    
+    .doc-preview .doc-title {
+        font-size: 0.85rem;
+        margin-top: 6px;
+    }
+    
+    .fullscreenModal-content {
+        max-width: 80%;
+    }
+    
+    .close {
+        top: 15px;
+        right: 25px;
+        font-size: 35px;
+    }
+    
+    .about-container {
+        max-width: 700px;
+        padding: 30px 15px;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-text h2 {
+        font-size: 1.7rem;
+        padding-top: 2rem;
+    }
+    
+    .mission-list li {
+        font-size: 1rem;
+        /* padding: 0.8rem 0; */
+    }
+    
+    .document-preview {
+        padding: 20px;
+    }
+    
+    .doc-embed {
+        max-width: 100%;
+        width: 450px;
+        height: 600px;
+    }
+    
+    .image-placeholder.large {
+        height: 400px;
+        font-size: 1.1rem;
+    }
+    
+    .footer {
+        padding: 30px 0 15px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-column {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-column .logo {
+        justify-content: center;
+    }
+    
+    .footer-description {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-column .social-links {
+        justify-content: center;
+    }
+    
+    .footer-contacts {
+        align-items: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .map-form-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .gallery-nav {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .gallery-prev {
+        left: 15px;
+    }
+    
+    .gallery-next {
+        right: 15px;
+    }
+    .feedback-process {
+        padding-top: 40px;
+    }
+    
+    .process-steps {
+        max-width: 500px;
+    }
+    
+    .process-step {
+        padding: 16px;
+        margin-bottom: 18px;
+        min-height: 70px;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        margin-right: 12px;
+    }
+    
+    .step-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .step-content p {
+        font-size: 0.75rem;
+    }
+    
+    .process-step.final-step {
+        margin-top: 25px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 1rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.8rem;
+    }
+    
+    .final-note {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+}
+
+/* Мобильные устройства (480px - 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 12px;
+        max-width: 100%;
+    }
+    
+    /* Скрываем обычное меню */
+    .nav {
+        display: none;
+    }
+    
+    /* Показываем кнопку мобильного меню */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .header-content {
+        justify-content: space-between;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .header {
+        height: 50px;
+        padding: 5px 0;
+    }
+    
+    .mobile-menu {
+        top: 50px;
+    }
+    
+    .header-actions {
+        gap: 8px;
+    }
+    
+    .hero {
+        padding: 80px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .hero-features {
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .feature {
+        padding: 10px 18px;
+    }
+    
+    .feature span {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .services,
+    .advantages,
+    .portfolio,
+    .cta {
+        padding: 60px 0;
+    }
+    
+    .service-card,
+    .advantage {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+    
+    .service-card h3,
+    .advantage h3 {
+        font-size: 1.2rem;
+    }
+    
+    .reviews-section {
+        padding: 50px 15px;
+    }
+    
+    .reviews-container {
+        padding: 0 40px;
+        max-width: 100%;
+    }
+    
+    .review-card {
+        flex: 0 0 calc(100% - 20px);
+        margin: 0 10px;
+        height: 320px;
+        padding: 18px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 150px;
+    }
+    
+    .reviews-title {
+        font-size: 1.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .review-name {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+    
+    .review-text {
+        font-size: 0.92rem;
+        line-height: 1.4;
+    }
+    
+    .reviews-nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .reviews-nav-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .read-more-btn {
+        font-size: 0.85rem;
+    }
+    
+    .documents-preview-section {
+        padding: 40px 0;
+    }
+    
+    .documents-preview-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+    
+    .documents-preview-section > .container > p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+    
+    .documents-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .doc-preview {
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    .doc-preview img {
+        height: 120px;
+        margin-bottom: 6px;
+    }
+    
+    .doc-preview .doc-title {
+        font-size: 0.82rem;
+        margin-top: 5px;
+    }
+    
+    .fullscreenModal-content {
+        max-width: 90%;
+        max-height: 85vh;
+    }
+    
+    .close {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .about-container {
+        padding: 25px 0;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "text"
+            "document";
+        gap: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 12px;
+    }
+    
+    .about-text {
+        grid-area: text;
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .document-preview {
+        grid-area: document;
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background: #f8f9fa;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .about-text h2 {
+        font-size: 1.5rem;
+        padding-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .mission-list {
+        margin: 1.5rem 0;
+        text-align: left;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .mission-list li {
+        font-size: 0.95rem;
+        padding: 0.7rem 0;
+        padding-left: 25px;
+        max-width: 100%;
+        word-wrap: break-word;
+        width: 100%;
+    }
+    
+    .mission-list li::before {
+        font-size: 1.1rem;
+    }
+    
+    .doc-embed {
+        height: 550px;
+        border-radius: 6px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid #ddd;
+    }
+    
+    .doc-embed iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    .highlight-box {
+        padding: 25px 15px;
+        margin: 30px auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .highlight-title {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .highlight-list li {
+        font-size: 1rem;
+        padding-left: 25px;
+        width: 100%;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    .footer {
+        padding: 30px 0 15px;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .footer-column h4 {
+        font-size: 0.9rem;
+    }
+    
+    .footer-description {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+        max-width: 100%;
+    }
+    
+    .gallery-modal-content {
+        padding: 60px 15px 100px;
+        max-width: 100%;
+    }
+    
+    .gallery-close {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .gallery-counter {
+        top: 15px;
+        left: 15px;
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    .gallery-info {
+        bottom: 80px;
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    .gallery-thumbnails {
+        padding: 1rem;
+        margin: 0 -15px -100px;
+        max-width: 100%;
+    }
+    
+    .gallery-thumbnail {
+        width: 70px;
+        height: 55px;
+    }
+    .feedback-process {
+        padding-top: 30px;
+    }
+    
+    .process-steps {
+        max-width: 450px;
+        padding: 0 15px;
+    }
+    
+    .process-step {
+        padding: 14px;
+        margin-bottom: 15px;
+        min-height: 65px;
+        border-radius: 10px;
+    }
+    
+    .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    
+    .step-content h3 {
+        font-size: 0.85rem;
+        margin-bottom: 3px;
+    }
+    
+    .step-content p {
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+    
+    .process-step.final-step {
+        margin-top: 20px;
+        border-width: 1.5px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.75rem;
+    }
+    
+    .final-note {
+        font-size: 0.65rem;
+        padding: 4px 6px;
+        margin-top: 6px;
+    }
+}
+
+/* Очень маленькие устройства (< 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .logo-icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .btn {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+    
+    .mobile-menu-btn {
+        font-size: 1.3rem;
+        padding: 3px;
+    }
+    
+    .header {
+        height: 45px;
+        padding: 3px 0;
+    }
+    
+    .mobile-menu {
+        top: 45px;
+        padding: 15px;
+    }
+    
+    .mobile-menu a {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    
+    .header-actions {
+        gap: 6px;
+    }
+    
+    .hero {
+        padding: 70px 0 50px;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem;
+        margin-top: 5px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 8px 15px;
+    }
+    
+    .feature span {
+        font-size: 0.85rem;
+    }
+    
+    .btn-large {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title::after {
+        width: 40px;
+        height: 3px;
+        margin: 10px auto;
+    }
+    
+    .advantages,
+    .cta {
+        padding: 40px 0;
+    }
+
+    .services,
+    .portfolio{
+        padding: 60px 0;
+    }
+    
+    .services-grid,
+    .advantages-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .service-card,
+    .advantage {
+        padding: 1.2rem;
+    }
+    
+    .service-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-card h3,
+    .advantage h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-card p,
+    .advantage p {
+        font-size: 0.9rem;
+    }
+    
+    .reviews-section {
+        padding: 40px 10px;
+    }
+    
+    .reviews-container {
+        padding: 0 35px;
+    }
+    
+    .review-card {
+        flex: 0 0 calc(100% - 15px);
+        margin: 0 7.5px;
+        height: 300px;
+        padding: 16px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 130px;
+    }
+    
+    .reviews-title {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    
+    .review-name {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+    }
+    
+    .review-text {
+        font-size: 0.9rem;
+        line-height: 1.35;
+    }
+    
+    .reviews-nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .reviews-nav-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .reviews-dots {
+        margin-top: 15px;
+    }
+    
+    .reviews-dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .documents-preview-section {
+        padding: 30px 0;
+    }
+    
+    .documents-preview-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+    
+    .documents-preview-section > .container > p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    
+    .documents-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .doc-preview {
+        padding: 8px;
+        border-radius: 6px;
+    }
+    
+    .doc-preview img {
+        height: 100px;
+        margin-bottom: 5px;
+    }
+    
+    .doc-preview .doc-title {
+        font-size: 0.78rem;
+        margin-top: 4px;
+        line-height: 1.2;
+    }
+    
+    .fullscreenModal-content {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+    
+    .close {
+        top: 8px;
+        right: 15px;
+        font-size: 25px;
+    }
+    
+    .about-container {
+        padding: 20px 10px;
+    }
+    
+    .about-grid {
+        gap: 20px;
+    }
+    
+    .about-text h2 {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    
+    .mission-list {
+        margin: 1rem 0;
+    }
+    
+    .mission-list li {
+        font-size: 0.9rem;
+        padding: 0.6rem 0;
+        padding-left: 20px;
+        line-height: 1.5;
+    }
+    
+    .mission-list li::before {
+        font-size: 1rem;
+    }
+    
+    .document-preview {
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    .doc-embed {
+        height: 400px;
+        border-radius: 5px;
+    }
+    
+    .values-list li {
+        font-size: 0.9rem;
+        padding-left: 20px;
+    }
+    
+    .image-placeholder.large {
+        height: 300px;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .highlight-box {
+        padding: 20px;
+        margin: 30px auto;
+        border-radius: 15px;
+    }
+    
+    .highlight-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .highlight-list li {
+        font-size: 0.9rem;
+        padding-left: 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .footer {
+        padding: 20px 0 10px;
+        font-size: 0.8rem;
+    }
+    
+    .footer-content {
+        gap: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-column h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    .footer-column .logo {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .footer-column .logo-icon {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 0;
+    }
+    
+    .footer-column .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .footer-description {
+        font-size: 0.78rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer-column .social-links {
+        gap: 0.5rem;
+    }
+    
+    .footer-column .social-link {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .footer-column .social-link img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .footer-contacts {
+        gap: 0.5rem;
+    }
+    
+    .contact-item {
+        font-size: 0.78rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 0.8rem;
+    }
+    
+    .footer-bottom-content {
+        gap: 0.6rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+    
+    .footer-legal {
+        gap: 0.8rem;
+        flex-direction: column;
+    }
+    
+    .footer-legal a {
+        font-size: 0.75rem;
+    }
+    
+    .gallery-modal-content {
+        padding: 50px 10px 80px;
+    }
+    
+    .gallery-close {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+    
+    .gallery-counter {
+        top: 10px;
+        left: 10px;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .gallery-info {
+        bottom: 60px;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .gallery-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .gallery-prev {
+        left: 5px;
+    }
+    
+    .gallery-next {
+        right: 5px;
+    }
+    
+    .gallery-thumbnails {
+        padding: 0.8rem;
+        margin: 0 -10px -80px;
+        gap: 0.5rem;
+    }
+    
+    .gallery-thumbnail {
+        width: 50px;
+        height: 40px;
+    }
+    
+    .page-header {
+        padding: 80px 0 40px;
+        margin-top: 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    .feedback-process {
+        padding-top: 25px;
+    }
+    
+    .process-steps {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .process-step {
+        padding: 12px;
+        margin-bottom: 12px;
+        min-height: 60px;
+        border-radius: 8px;
+    }
+    
+    .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+        margin-right: 8px;
+    }
+    
+    .step-content h3 {
+        font-size: 0.8rem;
+    }
+    
+    .step-content p {
+        font-size: 0.65rem;
+    }
+    
+    .process-step.final-step {
+        margin-top: 15px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 0.85rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.7rem;
+    }
+    
+    .final-note {
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        margin-top: 5px;
+    }
+}
+
+/* Сверхмаленькие устройства (< 380px) */
+@media (max-width: 380px) {
+    .container {
+        padding: 0 8px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+        display: none;
+    }
+    
+    .logo-icon {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 0;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+    
+    .mobile-menu-btn {
+        font-size: 1.2rem;
+    }
+    
+    .header {
+        height: 40px;
+        padding: 2px 0;
+    }
+    
+    .mobile-menu {
+        top: 40px;
+        padding: 10px;
+    }
+    
+    .mobile-menu a {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+    
+    .header-actions {
+        gap: 4px;
+    }
+    
+    /* На очень маленьких экранах скрываем текст кнопки */
+    #orderCallBtn {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+    
+    #orderCallBtn::before {
+        content: "Заказ";
+    }
+    
+    #orderCallBtn span {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .feature span {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-card h3,
+    .advantage h3 {
+        font-size: 1rem;
+    }
+    
+    .reviews-section {
+        padding: 30px 8px;
+    }
+    
+    .reviews-container {
+        padding: 0 30px;
+    }
+    
+    .review-card {
+        flex: 0 0 calc(100% - 10px);
+        margin: 0 5px;
+        height: 280px;
+        padding: 14px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 110px;
+    }
+    
+    .reviews-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .review-name {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+        padding-bottom: 5px;
+    }
+    
+    .review-text {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+    
+    .reviews-nav-btn {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .reviews-nav-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .read-more-btn {
+        font-size: 0.8rem;
+        margin-top: 8px;
+    }
+    
+    .reviews-dots {
+        margin-top: 12px;
+        gap: 8px;
+    }
+    
+    .reviews-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .documents-preview-section {
+        padding: 25px 0;
+    }
+    
+    .documents-preview-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+    
+    .documents-preview-section > .container > p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        padding: 0 8px;
+    }
+    
+    .documents-grid {
+        grid-template-columns: 1fr; /* 1 колонка */
+        gap: 10px;
+        padding: 0 8px;
+    }
+    
+    .doc-preview {
+        padding: 6px;
+        border-radius: 5px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .doc-preview img {
+        height: 90px;
+        margin-bottom: 4px;
+    }
+    
+    .doc-preview .doc-title {
+        font-size: 0.75rem;
+        margin-top: 3px;
+    }
+    
+    .fullscreenModal-content {
+        max-width: 98%;
+        max-height: 75vh;
+    }
+    
+    .close {
+        top: 5px;
+        right: 10px;
+        font-size: 22px;
+    }
+.about-container {
+        padding: 15px 8px;
+    }
+    
+    .about-grid {
+        gap: 15px;
+    }
+    
+    .about-text h2 {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    
+    .mission-list {
+        margin: 1rem 0;
+    }
+    
+    .mission-list li {
+        font-size: 0.85rem;
+        padding: 0.5rem 0;
+        padding-left: 18px;
+    }
+    
+    .mission-list li::before {
+        font-size: 0.9rem;
+    }
+    
+    .document-preview {
+        padding: 12px;
+        border-radius: 6px;
+    }
+    
+    .doc-embed {
+        height: 350px;
+        border-radius: 4px;
+    }
+
+    .footer {
+        padding: 15px 0 8px;
+        font-size: 0.75rem;
+    }
+    
+    .footer-content {
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer-column h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .footer-column .logo-icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .footer-column .logo-text {
+        font-size: 1rem;
+    }
+    
+    .footer-description {
+        font-size: 0.75rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .footer-column .social-link {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .footer-column .social-link img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .contact-item {
+        font-size: 0.75rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 0.6rem;
+    }
+    
+    .footer-bottom-content {
+        gap: 0.5rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.7rem;
+    }
+    
+    .footer-legal {
+        gap: 0.6rem;
+    }
+    
+    .footer-legal a {
+        font-size: 0.7rem;
+    }
+    
+    .gallery-thumbnail {
+        width: 45px;
+        height: 35px;
+    }
+    .feedback-process {
+        padding-top: 20px;
+    }
+    
+    .process-step {
+        padding: 10px;
+        margin-bottom: 10px;
+        min-height: 55px;
+        border-radius: 6px;
+    }
+    
+    .step-number {
+        width: 22px;
+        height: 22px;
+        font-size: 0.75rem;
+        margin-right: 6px;
+    }
+    
+    .step-content h3 {
+        font-size: 0.75rem;
+    }
+    
+    .step-content p {
+        font-size: 0.6rem;
+        line-height: 1.2;
+    }
+    
+    .process-step.final-step {
+        margin-top: 12px;
+    }
+    
+    .process-step.final-step .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    
+    .process-step.final-step .step-content h3 {
+        font-size: 0.8rem;
+    }
+    
+    .process-step.final-step .step-content p {
+        font-size: 0.65rem;
+    }
+    
+    .final-note {
+        font-size: 0.55rem;
+        padding: 2px 4px;
+        margin-top: 4px;
+    }
+}
+/* Дополнительно для очень высоких экранов */
+@media (min-width: 1400px) {
+   .container {
+        max-width: 1400px;
+    }
+    
+    .nav ul {
+        gap: 2rem;
+    }
+    
+    .nav a {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+    
+    .logo-text {
+        font-size: 1.6rem;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header-actions {
+        gap: 20px;
+    }
+
+    .reviews-container {
+        max-width: 1400px;
+        padding: 0 80px;
+    }
+    
+    .review-card {
+        height: 400px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 220px;
+    }
+    .documents-grid {
+        max-width: 1400px;
+        gap: 25px;
+    }
+    
+    .doc-preview {
+        padding: 20px;
+    }
+    
+    .doc-preview img {
+        height: 180px;
+    }
+    
+    .doc-preview .doc-title {
+        font-size: 1rem;
+    }
+
+    .about-container {
+        max-width: 1400px;
+        padding: 50px 30px;
+    }
+    
+    .about-grid {
+        gap: 50px;
+    }
+    
+    .about-text h2 {
+        font-size: 2.2rem;
+    }
+    
+    .mission-list li {
+        font-size: 1.2rem;
+    }
+    
+    .document-preview {
+        padding: 30px;
+    }
+    
+    .doc-embed {
+        max-width: 650px;
+    }
+
+    .footer {
+        padding: 50px 0 25px;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        gap: 4rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .footer-column h4 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-column .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-column .logo-text {
+        font-size: 1.6rem;
+    }
+    
+    .footer-description {
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    
+    .footer-column .social-link {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-column .social-link img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Портретная ориентация на мобильных */
+@media (max-width: 768px) and (orientation: portrait) {
+    .mobile-menu {
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .review-card {
+        height: 300px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 140px;
+    }
+
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 968px) and (orientation: landscape) {
+    .mobile-menu {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+    
+    .mobile-menu a {
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+
+    .review-card {
+        height: 300px;
+    }
+    
+    .review-text.collapsed {
+        max-height: 140px;
+    }
+    .documents-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .doc-preview img {
+        height: 100px;
+    }
+
+}
+
+/* Состояние загрузки */
+.doc-embed.loading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+}
+
+.doc-embed.loading::before {
+    content: 'Загрузка документа...';
+    color: #666;
+    font-size: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .doc-embed.loading {
+        background: #333;
+    }
+    
+    .doc-embed.loading::before {
+        color: #ccc;
+    }
+}

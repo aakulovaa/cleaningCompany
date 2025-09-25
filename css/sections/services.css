@@ -1,0 +1,83 @@
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: rgba(254, 254, 252, 1);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(1, 95, 121, 0.1);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, rgba(1, 92, 121, 1), rgba(2, 170, 223, 1));
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(1, 95, 121, 0.15);
+    border-color: rgba(1, 95, 121, 0.3);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: rgba(1, 95, 121, 1);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgba(1, 95, 121, 1);
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Специальные стили для CTA карточки */
+.notFound-card {
+    background: linear-gradient(135deg, rgba(1, 95, 121, 0.05), rgba(2, 170, 223, 0.05));
+    border: 2px dashed rgba(1, 95, 121, 0.3);
+    text-align: center;
+    padding-top: 25%;
+}
+
+.notFound-card:hover {
+    border-style: solid;
+    border-color: rgba(1, 95, 121, 0.5);
+    background: linear-gradient(135deg, rgba(1, 95, 121, 0.1), rgba(2, 170, 223, 0.1));
+}
+
+.notFound-content h3 {
+    color: rgba(1, 95, 121, 1);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.notFound-content p {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

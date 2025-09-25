@@ -1,0 +1,44 @@
+/* Grid Layouts */
+.services-grid,
+.advantages-grid,
+.portfolio-grid,
+.pricing-grid,
+.contact-grid,
+.faq-grid,
+.stats-grid,
+.documents-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.advantages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.faq-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.documents-grid {
+    grid-template-columns: repeat(6, 1fr);
+}

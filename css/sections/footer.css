@@ -1,0 +1,132 @@
+/* Footer */
+.footer {
+    background: rgba(1, 95, 121, 1);
+    color: white;
+    padding: 40px 0 20px;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 3rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+/* Лого в футере */
+.footer-column .logo {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-column .logo-icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 13px;
+}
+
+.footer-column .logo-text {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    max-width: 300px;
+}
+
+/* Соцсети в футере */
+.footer-column .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.footer-column .social-link {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-column .social-link:hover {
+    transform: translateY(-2px);
+}
+
+.footer-column .social-link img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Контакты в футере */
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+    border-top: 1px solid rgba(2, 170, 223, 0.3);
+    padding-top: 1.5rem;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: rgba(2, 170, 223, 1);
+}

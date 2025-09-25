@@ -1,0 +1,45 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background: rgba(1, 95, 121, 1);
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: rgba(2, 170, 223, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(1, 95, 121, 0.3);
+}
+
+.btn-accent {
+    background: linear-gradient(135deg, rgba(1, 92, 121, 1), rgba(2, 170, 223, 1));
+    color: white;
+}
+
+.btn-accent:hover {
+    background: linear-gradient(135deg, rgba(2, 170, 223, 1), rgba(1, 92, 121, 1));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(2, 170, 223, 0.3);
+}
+
+.btn-large {
+    padding: 18px 45px;
+    font-size: 18px;
+}
+
+.btn-full {
+    width: 100%;
+}

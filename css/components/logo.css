@@ -1,0 +1,41 @@
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(1, 95, 121, 1);
+    text-decoration: none;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: rgba(1, 95, 121, 1);
+    transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+    color: rgba(2, 170, 223, 1);
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 14px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+    transform: scale(1.1);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}

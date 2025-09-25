@@ -1,0 +1,28 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgba(1, 95, 121, 1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: rgba(1, 95, 121, 1);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, rgba(1, 92, 121, 1), rgba(2, 170, 223, 1));
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.text-center {
+    text-align: center;
+}

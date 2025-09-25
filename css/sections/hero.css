@@ -1,0 +1,93 @@
+/* Hero Section */
+.hero {
+    background: url('/img/back.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0 100px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-shadow: 
+        2px 2px 4px rgba(1, 92, 121, 1),
+        -1px -1px 0 rgba(1, 92, 121, 1),
+        1px -1px 0 rgba(1, 92, 121, 1),
+        -1px 1px 0 rgba(1, 92, 121, 1),
+        1px 1px 0 rgba(1, 92, 121, 1);
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 
+        2px 2px 4px rgba(1, 92, 121, 1),
+        -1px -1px 0 rgba(1, 92, 121, 1),
+        1px -1px 0 rgba(1, 92, 121, 1),
+        -1px 1px 0 rgba(1, 92, 121, 1),
+        1px 1px 0 rgba(1, 92, 121, 1);
+}
+
+/* Hero Features with Outline */
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 12px 24px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 
+        2px 2px 4px rgba(1, 92, 121, 1),
+        -1px -1px 0 rgba(1, 92, 121, 1),
+        1px -1px 0 rgba(1, 92, 121, 1),
+        -1px 1px 0 rgba(1, 92, 121, 1),
+        1px 1px 0 rgba(1, 92, 121, 1);
+}
+
+.feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(1, 92, 121, 1), rgba(12, 24, 184, 0.05));
+    z-index: 1;
+}
+
+.feature span {
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.feature:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(1, 92, 121, 1);
+}
