@@ -97,7 +97,6 @@ const galleryData = {
     industrialPremises: {
         title: "Уборка производственных и непроизводственных помещений",
         images: [
-            "img/works/industrialPremises/work1.jpg",
             "img/works/industrialPremises/work2.jpg",
             "img/works/industrialPremises/work3.jpg",
             "img/works/industrialPremises/work4.jpg",
@@ -182,7 +181,6 @@ const galleryData = {
         title: "Генеральная уборка офисов, коттеджей",
         images: [
             "img/works/generalCleaning/work1.jpg",
-            "img/works/generalCleaning/work2.jpg",
             "img/works/generalCleaning/work3.jpg",
             "img/works/generalCleaning/work4.jpg",
             "img/works/generalCleaning/work5.jpg",
