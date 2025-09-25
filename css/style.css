@@ -3705,26 +3705,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/* Высокие мобильные устройства */
-@media (max-width: 480px) and (min-height: 700px) {
-    .doc-embed {
-        height: 450px;
-    }
-}
-
-/* Очень высокие мобильные устройства */
-@media (max-width: 480px) and (min-height: 800px) {
-    .doc-embed {
-        height: 500px;
-    }
-}
-
-/* Улучшение читаемости на маленьких экранах */
-@media (max-width: 768px) {
-    .doc-embed {
-        -webkit-overflow-scrolling: touch;
-    }
-}
 
 /* Состояние загрузки */
 .doc-embed.loading {
