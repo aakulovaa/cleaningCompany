@@ -88,7 +88,10 @@ const galleryData = {
             "img/works/postConstruction/work35.jpg",
             "img/works/postConstruction/work36.jpg",
             "img/works/postConstruction/work37.jpg",
-            "img/works/postConstruction/work38.jpg"
+            "img/works/postConstruction/work38.jpg",
+            "img/works/postConstruction/work39.jpg",
+            "img/works/postConstruction/work40.jpg",
+            "img/works/postConstruction/work41.jpg"
         ]
     },
     industrialPremises: {
