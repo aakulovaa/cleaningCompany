@@ -1331,20 +1331,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.document-preview h2 {
-    margin-top: 0;
-    color: #015f79;
-    text-align: center;
-     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .doc-embed {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
 }
+
 
 .about-grid {
     display: grid;
@@ -1964,6 +1956,17 @@ h1, h2, h3, h4, h5, h6 {
     .about-grid {
         gap: 30px;
     }
+
+    .document-preview {
+        padding: 22px;
+        border-radius: 11px;
+        margin: 18px 0;
+    }
+    
+    .doc-embed {
+        height: 550px;
+        border-radius: 7px;
+    }
     
     .footer-content {
         gap: 2rem;
@@ -2116,6 +2119,17 @@ h1, h2, h3, h4, h5, h6 {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+
+    .document-preview {
+        padding: 20px;
+        border-radius: 10px;
+        margin: 16px 0;
+    }
+    
+    .doc-embed {
+        height: 500px;
+        border-radius: 6px;
     }
     
     .image-placeholder.large {
@@ -2389,6 +2403,19 @@ h1, h2, h3, h4, h5, h6 {
     
     .stat-number {
         font-size: 2.5rem;
+    }
+
+    .document-preview {
+        padding: 18px;
+        border-radius: 8px;
+        margin: 14px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .doc-embed {
+        height: 450px;
+        border-radius: 5px;
+        border-width: 1px;
     }
     
     .footer {
@@ -2715,6 +2742,17 @@ h1, h2, h3, h4, h5, h6 {
     .stat-label {
         font-size: 0.9rem;
     }
+
+    .document-preview {
+        padding: 15px;
+        border-radius: 6px;
+        margin: 12px 0;
+    }
+    
+    .doc-embed {
+        height: 400px;
+        border-radius: 4px;
+    }
     
     .footer {
         padding: 20px 0 10px;
@@ -2966,6 +3004,17 @@ h1, h2, h3, h4, h5, h6 {
         right: 10px;
         font-size: 22px;
     }
+
+    .document-preview {
+        padding: 12px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    
+    .doc-embed {
+        height: 350px;
+        border-radius: 3px;
+    }ы
     
     .footer-column .logo-text {
         font-size: 0.9rem;
@@ -3014,6 +3063,17 @@ h1, h2, h3, h4, h5, h6 {
     .doc-preview .doc-title {
         font-size: 1rem;
     }
+
+    .document-preview {
+        padding: 30px;
+        border-radius: 14px;
+        margin: 25px 0;
+    }
+    
+    .doc-embed {
+        height: 500px;
+        border-radius: 9px;
+    }
 }
 
 /* Портретная ориентация на мобильных */
@@ -3027,6 +3087,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .doc-preview img {
         height: 110px;
+    }
+    .doc-embed {
+        height: 500px;
     }
 }
 
@@ -3046,4 +3109,54 @@ h1, h2, h3, h4, h5, h6 {
     .doc-preview img {
         height: 100px;
     }
+
+    .doc-embed {
+        height: 400px;
+    }
+    
+    .document-preview {
+        padding: 15px;
+    }
+}
+
+/* Высокие мобильные устройства */
+@media (max-width: 480px) and (min-height: 700px) {
+    .doc-embed {
+        height: 450px;
+    }
+}
+
+/* Очень высокие мобильные устройства */
+@media (max-width: 480px) and (min-height: 800px) {
+    .doc-embed {
+        height: 500px;
+    }
+}
+
+/* Улучшение читаемости на маленьких экранах */
+@media (max-width: 768px) {
+    .doc-embed {
+        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    }
+}
+
+/* Оптимизация для медленных соединений */
+.doc-embed {
+    background: #f8f9fa;
+    position: relative;
+}
+
+.doc-embed::before {
+    content: 'Загрузка документа...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 1rem;
+    z-index: -1;
+}
+
+.doc-embed iframe[src] ~ .doc-embed::before {
+    display: none;
 }
