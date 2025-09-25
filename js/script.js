@@ -18,6 +18,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalService = document.getElementById('modalService');
     const selectedServiceInput = document.getElementById('selectedServiceInput');
 
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            this.textContent = mobileMenu.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Закрытие меню при клике на ссылку
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            });
+        });
+        
+        // Закрытие меню при клике вне его области
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.header-content') && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            }
+        });
+    }
+
     // Добавляем data-атрибуты к карточкам услуг
     const serviceCards = document.querySelectorAll('.services-card');
     const serviceMapping = {

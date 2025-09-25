@@ -153,6 +153,80 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
+/* Контейнер для кнопок в правой части */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Мобильное меню (скрыто по умолчанию) */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    color: rgba(2, 170, 223, 1);
+    transform: scale(1.1);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 97, 124, 0.98);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.mobile-menu li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu li:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    padding-left: 15px;
+}
+
 .nav ul {
     display: flex;
     list-style: none;
@@ -190,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav a.active::after {
     width: 100%;
 }
+
 
 /* Hero Section */
 .hero {
@@ -1874,8 +1949,34 @@ h1, h2, h3, h4, h5, h6 {
 /* Большие планшеты и маленькие десктопы (968px - 1200px) */
 @media (max-width: 1200px) {
     .container {
-        max-width: 960px;
+        max-width: 1000px;
         padding: 0 15px;
+    }
+    
+    .nav ul {
+        gap: 1.5rem;
+    }
+    
+    .nav a {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .header-actions {
+        gap: 12px;
     }
     
     .hero-title {
@@ -1976,12 +2077,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Планшеты (768px - 968px) */
 @media (max-width: 968px) {
     .container {
-        max-width: 720px;
+        max-width: 900px;
+        padding: 0 15px;
     }
     
-    .header {
-        height: 55px;
-        padding: 8px 0;
+    .nav ul {
+        gap: 1.2rem;
+    }
+    
+    .nav a {
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
     }
     
     .logo-text {
@@ -1993,12 +2103,13 @@ h1, h2, h3, h4, h5, h6 {
         height: 30px;
     }
     
-    .nav ul {
-        gap: 1.2rem;
+    .header {
+        height: 55px;
+        padding: 8px 0;
     }
     
-    .nav a {
-        font-size: 0.9rem;
+    .header-actions {
+        gap: 10px;
     }
     
     .hero {
@@ -2177,43 +2288,48 @@ h1, h2, h3, h4, h5, h6 {
 /* Мобильные устройства (480px - 768px) */
 @media (max-width: 768px) {
     .container {
-        /* max-width: 540px; */
         padding: 0 12px;
     }
     
-    .header-content {
-        flex-wrap: wrap;
-        height: auto;
-        min-height: 55px;
+    /* Скрываем обычное меню */
+    .nav {
+        display: none;
     }
     
-    .logo {
-        margin-right: auto;
+    /* Показываем кнопку мобильного меню */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .header-content {
+        justify-content: space-between;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 13px;
     }
     
     .logo-text {
-        font-size: 0.01rem;
-    }
-
-    .btn {
-        font-size: 0.01rem;
-    }
-
-    .nav {
-        order: 3;
-        width: 100%;
-        margin-top: 10px;
+        font-size: 1.2rem;
     }
     
-    .nav ul {
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
+    .logo-icon {
+        width: 28px;
+        height: 28px;
     }
     
-    .nav a {
-        font-size: 0.1rem;
+    .header {
+        height: 50px;
         padding: 5px 0;
+    }
+    
+    .mobile-menu {
+        top: 50px;
+    }
+    
+    .header-actions {
+        gap: 8px;
     }
     
     .hero {
@@ -2482,11 +2598,6 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 10px;
     }
     
-    .header {
-        height: 50px;
-        padding: 5px 0;
-    }
-    
     .logo-text {
         font-size: 1.1rem;
     }
@@ -2496,12 +2607,33 @@ h1, h2, h3, h4, h5, h6 {
         height: 25px;
     }
     
-    .nav ul {
-        gap: 0.8rem;
+    .btn {
+        padding: 7px 14px;
+        font-size: 12px;
     }
     
-    .nav a {
-        font-size: 0.8rem;
+    .mobile-menu-btn {
+        font-size: 1.3rem;
+        padding: 3px;
+    }
+    
+    .header {
+        height: 45px;
+        padding: 3px 0;
+    }
+    
+    .mobile-menu {
+        top: 45px;
+        padding: 15px;
+    }
+    
+    .mobile-menu a {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    
+    .header-actions {
+        gap: 6px;
     }
     
     .hero {
@@ -2865,16 +2997,57 @@ h1, h2, h3, h4, h5, h6 {
     
     .logo-text {
         font-size: 1rem;
+        display: none;
     }
     
-    .nav ul {
-        gap: 0.5rem;
+    .logo-icon {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 0;
     }
     
-    .nav a {
-        font-size: 0.75rem;
+    .btn {
+        padding: 6px 12px;
+        font-size: 11px;
     }
     
+    .mobile-menu-btn {
+        font-size: 1.2rem;
+    }
+    
+    .header {
+        height: 40px;
+        padding: 2px 0;
+    }
+    
+    .mobile-menu {
+        top: 40px;
+        padding: 10px;
+    }
+    
+    .mobile-menu a {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+    
+    .header-actions {
+        gap: 4px;
+    }
+    
+    /* На очень маленьких экранах скрываем текст кнопки */
+    #orderCallBtn {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+    
+    #orderCallBtn::before {
+        content: "Заказ";
+    }
+    
+    #orderCallBtn span {
+        display: none;
+    }
+
     .hero-title {
         font-size: 1.4rem;
     }
@@ -3035,6 +3208,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Дополнительно для очень высоких экранов */
 @media (min-width: 1400px) {
+   .container {
+        max-width: 1400px;
+    }
+    
+    .nav ul {
+        gap: 2rem;
+    }
+    
+    .nav a {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+    
+    .logo-text {
+        font-size: 1.6rem;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header-actions {
+        gap: 20px;
+    }
+
     .reviews-container {
         max-width: 1400px;
         padding: 0 80px;
@@ -3078,6 +3281,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Портретная ориентация на мобильных */
 @media (max-width: 768px) and (orientation: portrait) {
+    .mobile-menu {
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
     .review-card {
         height: 300px;
     }
@@ -3095,6 +3302,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ландшафтная ориентация на мобильных */
 @media (max-width: 968px) and (orientation: landscape) {
+    .mobile-menu {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+    
+    .mobile-menu a {
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+
     .review-card {
         height: 300px;
     }
@@ -3159,4 +3376,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .doc-embed iframe[src] ~ .doc-embed::before {
     display: none;
+}
+
+/* Улучшение доступности */
+.mobile-menu-btn:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.nav a:focus,
+.btn:focus {
+    outline: 2px solid rgba(2, 170, 223, 1);
+    outline-offset: 2px;
 }
