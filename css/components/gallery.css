@@ -166,22 +166,18 @@
 }
 
 /* Информация о фото */
-.gallery-info {
+
+.gallery-caption {
     position: absolute;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
     color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1rem;
+    padding: 4rem 1rem -4.5rem;
     text-align: center;
-    backdrop-filter: blur(10px);
-    max-width: 80%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 /* Миниатюры */

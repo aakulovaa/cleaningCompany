@@ -67,13 +67,13 @@ const galleryData = {
             "img/works/postConstruction/work14.jpg",
             "img/works/postConstruction/work15.jpg",
             "img/works/postConstruction/work16.jpg",
+            "img/works/postConstruction/work17.jpg",
             "img/works/postConstruction/work18.jpg",
             "img/works/postConstruction/work19.jpg",
             "img/works/postConstruction/work20.jpg",
             "img/works/postConstruction/work21.jpg",
             "img/works/postConstruction/work22.jpg",
             "img/works/postConstruction/work23.jpg",
-            "img/works/postConstruction/work24.jpg",
             "img/works/postConstruction/work25.jpg",
             "img/works/postConstruction/work26.jpg",
             "img/works/postConstruction/work27.jpg",
@@ -288,6 +288,67 @@ const galleryData = {
             "img/works/cleanGarage/work4.jpg",
             "img/works/cleanGarage/work5.jpg"
         ]
+    },
+    equipment: {
+        title: "Оборудование",
+        images: [
+            {
+                src: "img/works/equipment/Ballu.jpg",
+                caption: "Осушитель воздуха промышленный Ballu BDI-80L"
+            },
+            {
+                src: "img/works/equipment/ADS328.jpg",
+                caption: "Промышленный пылесос ADS328"
+            },
+            {
+                src: "img/works/equipment/Aksion.jpg",
+                caption: "Промышленный озонатор Аксион П-80 0-007"
+            },
+            {
+                src: "img/works/equipment/Karcher.jpg",
+                caption: "Профессиональный аккумуляторный стеклоочиститель Karcher WVP 10"
+            },
+            {
+                src: "img/works/equipment/KarcherHD.jpg",
+                caption: "Аппарат высокого давления Karcher HD 5/17 C"
+            },
+            {
+                src: "img/works/equipment/HobotR3.jpg",
+                caption: "Робот-мойщик окон Hobot-R3 90 Вт 0.04 л"
+            },
+            {
+                src: "img/works/equipment/KarcherB.jpg",
+                caption: "Поломоечная машина Karcher B 150 R Bp D90"
+            },
+            {
+                src: "img/works/equipment/KarcherEasyFix.jpg",
+                caption: "Пароочиститель Karcher SC 4 EasyFix"
+            },
+            {
+                src: "img/works/equipment/karcherWD.jpg",
+                caption: "Хозяйственный пылесос WD 6 P S V-30/6/22/T"
+            },
+            {
+                src: "img/works/equipment/Baiyun.jpg",
+                caption: "Пылесос Baiyun 70л 3 турбины PS-0118"
+            },
+            {
+                src: "img/works/equipment/KarcherBDS.png",
+                caption: "Уборочная машина Karcher BDS 43/150 C Classic"
+            },
+            {
+                src: "img/works/equipment/SantoemmaSabrina.jpg",
+                caption: "Пенный экстрактор Santoemma Sabrina SW15"
+            },
+            {
+                src: "img/works/equipment/KarcherPuzzi.jpg",
+                caption: "Моющий пылесос Karcher Puzzi 10/1"
+            },
+            {
+                src: "img/works/equipment/unger.jpg",
+                caption: "Телескопические штанги UNGER"
+            },
+        ]
     }
 };
 
@@ -355,20 +416,33 @@ function updateGallery() {
     const currentImage = document.getElementById('galleryCurrentImage');
     const counter = document.getElementById('galleryCounter');
     const thumbnails = document.getElementById('galleryThumbnails');
+    const caption = document.getElementById('galleryCaption');
+    
+    // Получаем данные изображения (может быть объектом или строкой)
+    const imageData = album.images[currentIndex];
+    const imageSrc = typeof imageData === 'string' ? imageData : imageData.src;
+    const imageCaption = typeof imageData === 'string' ? '' : imageData.caption;
     
     // Обновление основного изображения
-    currentImage.src = album.images[currentIndex];
+    currentImage.src = imageSrc;
     currentImage.alt = album.title;
+    
+    // Обновление подписи
+    if (caption) {
+        caption.textContent = imageCaption;
+        caption.style.display = imageCaption ? 'block' : 'none';
+    }
     
     // Обновление счетчика
     counter.textContent = `${currentIndex + 1}/${album.images.length}`;
     
     // Обновление миниатюр
     thumbnails.innerHTML = '';
-    album.images.forEach((image, index) => {
+    album.images.forEach((imageData, index) => {
+        const imageSrc = typeof imageData === 'string' ? imageData : imageData.src;
         const thumbnail = document.createElement('div');
         thumbnail.className = `gallery-thumbnail ${index === currentIndex ? 'active' : ''}`;
-        thumbnail.innerHTML = `<img src="${image}" alt="${album.title}">`;
+        thumbnail.innerHTML = `<img src="${imageSrc}" alt="${album.title}">`;
         thumbnail.onclick = () => {
             currentIndex = index;
             updateGallery();
