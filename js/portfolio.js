@@ -67,7 +67,6 @@ const galleryData = {
             "img/works/postConstruction/work14.jpg",
             "img/works/postConstruction/work15.jpg",
             "img/works/postConstruction/work16.jpg",
-            "img/works/postConstruction/work17.jpg",
             "img/works/postConstruction/work18.jpg",
             "img/works/postConstruction/work19.jpg",
             "img/works/postConstruction/work20.jpg",
